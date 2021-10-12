@@ -1,0 +1,19 @@
+{
+  "name": "apiequipo12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-datasource-rest": "^3.2.0",
+    "apollo-server": "^3.3.0",
+    "graphql": "^15.6.1",
+    "lodash": "^4.17.21",
+    "node-fetch": "^3.0.0"
+  }
+}
