@@ -12,7 +12,13 @@ const usersResolver = {
         },
         editUser:(_,{id,user},{dataSources})=>{
             return dataSources.projectInvAPI.editUser(id,user)
-        }          
+        },
+        projec2User:(_,{idUser,idproject},{dataSources})=>{
+            return dataSources.projectInvAPI.projec2User(idUser,idproject)
+        },  
+        reProject :(_,{idUser,idproject},{dataSources})=>{
+            return dataSources.projectInvAPI.reProject(idUser,idproject)
+        }      
     }
 
 };

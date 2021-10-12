@@ -2,6 +2,12 @@ const projectResolver = {
     Query: {
         projectsByUser: (_, { id }, {dataSources}) =>{
             return dataSources.projectInvAPI.projectsByUser(id)
+        },
+        projectByDirector:(_,{directorId},{dataSources})=>{
+            return dataSources.projectInvAPI.projectByDirector(directorId)
+        },
+        projectById:(_,{projectId},{dataSources})=>{
+            return dataSources.projectInvAPI.projectById(projectId)
         }
     },
     Mutation: {

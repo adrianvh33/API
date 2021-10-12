@@ -42,6 +42,8 @@ const projectTypeDefs = gql `
     }
     extend type Query{
         projectsByUser(id: String!): [Project]
+        projectByDirector(directorId:String!):[Project]
+        projectById(projectId:String!):Project
     }
     type Mutation{
         createProject(project: ProjectInput!): Project

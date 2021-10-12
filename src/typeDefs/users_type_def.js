@@ -48,6 +48,9 @@ const usersTypeDefs = gql `
     type Mutation{
         createUser(user: UserInput!): User
         editUser( id: String, user: UserEdit!):User
+        projec2User(idUser: String!, idproject:String!):User
+        reProject(idUser: String!, idproject:String!):User
+        
     }
 `;
 
