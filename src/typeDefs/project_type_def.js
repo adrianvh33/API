@@ -44,6 +44,7 @@ const projectTypeDefs = gql `
         projectsByUser(id: String!): [Project]
         projectByDirector(directorId:String!):[Project]
         projectById(projectId:String!):Project
+        allProjects(id:String):[Project]
     }
     type Mutation{
         createProject(project: ProjectInput!): Project

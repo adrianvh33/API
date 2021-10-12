@@ -8,6 +8,9 @@ const projectResolver = {
         },
         projectById:(_,{projectId},{dataSources})=>{
             return dataSources.projectInvAPI.projectById(projectId)
+        },
+        allProjects:(_,{id},{dataSources})=>{
+            return dataSources.projectInvAPI.allProjects(id)
         }
     },
     Mutation: {

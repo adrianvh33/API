@@ -49,6 +49,10 @@ class ProjectInvAPI extends RESTDataSource {
     async projectById(projectId){
         return await this.get(`/projects/${projectId}`);
     }
+
+    async allProjects(id){
+        return await this.get('/allProjects');
+    }
 }
 
 module.exports = ProjectInvAPI;
