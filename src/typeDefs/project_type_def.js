@@ -49,6 +49,7 @@ const projectTypeDefs = gql `
     type Mutation{
         createProject(project: ProjectInput!): Project
         editProject(id:String!,project:EditInput!):Project
+        deleteProject(id:String!):String
     }
 `;
 

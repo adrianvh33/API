@@ -19,6 +19,9 @@ const projectResolver = {
         },
         editProject:(_,{id,project},{dataSources})=>{
             return dataSources.projectInvAPI.editProject(id,project)
+        },
+        deleteProject:(_,{id},{dataSources})=>{
+            return dataSources.projectInvAPI.deleteProject(id)
         }
     }
 
