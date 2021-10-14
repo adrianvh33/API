@@ -9,11 +9,11 @@ const projectTypeDefs = gql `
         presupuesto: Int
         objetivos: [String]
         estado: String
-        fecha_inicio: [String]
-        fecha_final: [String]
+        fecha_inicio: String
+        fecha_final: String
         estadoFase: String
         avances: [String]
-        notas_desempeno: String
+        notas_desempeno: [String]
     }
 
     input ProjectInput{
@@ -24,6 +24,7 @@ const projectTypeDefs = gql `
         presupuesto: Int
         objetivos: [String]
         estado: String
+        fecha_final: String
         estadoFase: String
         avances: [String]
         notas_desempeno: String
