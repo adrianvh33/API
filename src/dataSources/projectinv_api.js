@@ -57,6 +57,9 @@ class ProjectInvAPI extends RESTDataSource {
     async deleteProject(id){
         return await this.delete(`/deleteProject/${id}`);
     }
+    async deleteUser(id){
+        return await this.delete(`/deleteUser/${id}`);
+    }
 }
 
 module.exports = ProjectInvAPI;

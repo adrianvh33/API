@@ -18,7 +18,10 @@ const usersResolver = {
         },  
         reProject :(_,{idUser,idproject},{dataSources})=>{
             return dataSources.projectInvAPI.reProject(idUser,idproject)
-        }      
+        },      
+        deleteUser:(_,{id},{dataSources})=>{
+            return dataSources.projectInvAPI.deleteUser(id)
+        }
     }
 
 };

@@ -50,7 +50,7 @@ const usersTypeDefs = gql `
         editUser( id: String, user: UserEdit!):User
         projec2User(idUser: String!, idproject:String!):User
         reProject(idUser: String!, idproject:String!):User
-        
+        deleteUser(id:String!):String
     }
 `;
 
