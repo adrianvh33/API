@@ -60,6 +60,20 @@ class ProjectInvAPI extends RESTDataSource {
     async deleteUser(id){
         return await this.delete(`/deleteUser/${id}`);
     }
+
+    async addAdvance(id,avance){
+        avance = new Object(JSON.parse(JSON.stringify(avance)));
+        return await this.put(`/addAdvance/${id}`,avance);
+    }
+
+    async editAdvance(id,indexAvance,avance){
+        avance = new Object(JSON.parse(JSON.stringify(avance)));
+        return await this.put(`/editAdvance/${id}/${indexAvance}`,avance);
+    }
+
+    async deleteAdvance(id,indexAvance){
+        return await this.delete(`/deleteAdvance/${id}/${indexAvance}`);
+    }
 }
 
 module.exports = ProjectInvAPI;

@@ -16,6 +16,10 @@ const projectTypeDefs = gql `
         notas_desempeno: [String]
     }
 
+    input AvanceInput{
+        avance: String!
+    }
+
     input ProjectInput{
         id_proyecto: String!
         nombre: String
@@ -51,6 +55,9 @@ const projectTypeDefs = gql `
         createProject(project: ProjectInput!): Project
         editProject(id:String!,project:EditInput!):Project
         deleteProject(id:String!):String
+        addAdvance(id:String!,avance:AvanceInput!):Project
+        editAdvance(id:String!,indexAvance:String!,avance:AvanceInput!):Project
+        deleteAdvance (id:String!,indexAvance:String!):Project
     }
 `;
 

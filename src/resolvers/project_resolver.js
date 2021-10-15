@@ -22,7 +22,20 @@ const projectResolver = {
         },
         deleteProject:(_,{id},{dataSources})=>{
             return dataSources.projectInvAPI.deleteProject(id)
+        },
+
+        addAdvance:(_,{id,avance},{dataSources})=>{
+            return dataSources.projectInvAPI.addAdvance(id,avance)
+        },
+
+        editAdvance:(_,{id,indexAvance,avance},{dataSources})=>{
+            return dataSources.projectInvAPI.editAdvance(id,indexAvance,avance)
+        },
+
+        deleteAdvance:(_,{id,indexAvance},{dataSources})=>{
+            return dataSources.projectInvAPI.deleteAdvance(id,indexAvance)
         }
+
     }
 
 };
