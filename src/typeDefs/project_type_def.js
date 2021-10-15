@@ -26,7 +26,7 @@ const projectTypeDefs = gql `
         integrantes: [String]
         director: String
         presupuesto: Int
-        objetivos: [String]
+        objetivos: String
         estado: String
         fecha_final: String
         estadoFase: String
@@ -39,7 +39,7 @@ const projectTypeDefs = gql `
         integrantes: [String]
         director: String
         presupuesto: Int
-        objetivos: [String]
+        objetivos: String
         estado: String
         estadoFase: String
         avances: [String]
