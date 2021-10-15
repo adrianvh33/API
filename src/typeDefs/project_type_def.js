@@ -13,7 +13,7 @@ const projectTypeDefs = gql `
         fecha_final: String
         estadoFase: String
         avances: [String]
-        notas_desempeno: [String]
+        notas_desempeno: String
     }
 
     input AvanceInput{
