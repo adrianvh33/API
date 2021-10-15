@@ -7,7 +7,7 @@ const projectTypeDefs = gql `
         integrantes: [String]
         director: String
         presupuesto: Int
-        objetivos: [String]
+        objetivos: String
         estado: String
         fecha_inicio: String
         fecha_final: String
