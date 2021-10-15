@@ -54,6 +54,10 @@ class ProjectInvAPI extends RESTDataSource {
         return await this.get('/allProjects');
     }
 
+    async allUsers(id){
+        return await this.get('/allUsers');
+    }
+
     async deleteProject(id){
         return await this.delete(`/deleteProject/${id}`);
     }

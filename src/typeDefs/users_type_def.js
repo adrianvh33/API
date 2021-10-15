@@ -2,7 +2,6 @@ const { gql } = require('apollo-server');
 const usersTypeDefs = gql `
     type User {
         id: String!
-        id_usuario: Int
         nombre: String
         apellido: String
         correo: String
@@ -16,7 +15,6 @@ const usersTypeDefs = gql `
     
     input UserInput{
         id: String!
-        id_usuario: Int
         nombre: String
         apellido: String
         correo: String
@@ -29,7 +27,6 @@ const usersTypeDefs = gql `
     }
 
     input UserEdit{
-        id_usuario: Int
         nombre: String
         apellido: String
         correo: String
@@ -43,6 +40,7 @@ const usersTypeDefs = gql `
 
     type Query {
         userById(id:String): User
+        allUsers(id:String):[User]
     }
 
     type Mutation{

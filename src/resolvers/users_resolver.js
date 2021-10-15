@@ -2,6 +2,9 @@ const usersResolver = {
     Query: {
         userById: (_, {id}, { dataSources}) =>{
             return dataSources.projectInvAPI.userById(id)
+        },
+        allUsers:(_,{id},{dataSources})=>{
+            return dataSources.projectInvAPI.allUsers(id)
         }
     },
     Mutation: 
