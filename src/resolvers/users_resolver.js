@@ -24,7 +24,7 @@ const usersResolver = {
         },      
         deleteUser:(_,{id},{dataSources})=>{
             return dataSources.projectInvAPI.deleteUser(id)
-        }
+        },
     }
 
 };

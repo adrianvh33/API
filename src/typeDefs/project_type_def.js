@@ -42,6 +42,7 @@ const projectTypeDefs = gql `
         objetivos: String
         estado: String
         estadoFase: String
+        fecha_final: String
         avances: [String]
         notas_desempeno: String
     }
